@@ -83,7 +83,6 @@ class CFGAN(nn.Module):
         # sex should considered about intervention
         if(intervention == -1):
             self.sex = self.race_net(Z["sex"])
-
         elif(intervention == 0):
             self.sex = torch.zeros(Z["sex"].size())
         else:
@@ -137,6 +136,6 @@ class CFGAN(nn.Module):
         self.hours_per_week, self.native_country, self.income
 
 
-cf = CFGAN(f=nn.Sigmoid())
-cf(torch.randn(6, 11), intervention=0)
-print(cf)
+# cf = CFGAN(f=nn.Sigmoid())
+# cf(torch.randn(6, 11), intervention=0)
+# print(cf)
