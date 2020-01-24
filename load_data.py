@@ -9,16 +9,21 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 # dataset
+
+
 class AdultDataset(Dataset):
     def __init__(self, data_set):
         self.x = data_set
         self.len = data_set.size()[0]
-    def __getitem__(self,index):
+
+    def __getitem__(self, index):
         return self.x[index]
+
     def __len__(self):
         return self.len
 
 # binary the value
+
 
 def mapping(tuple):
     # age, 37
@@ -46,7 +51,7 @@ def mapping(tuple):
     return tuple
 
 
-def load_data(){
+def load_data(data_batch=128){
     # load data from dataset
     # Using 11variables, the casual model is shown in the paper
     # The atribute are:
@@ -104,8 +109,8 @@ def load_data(){
     test_data = torch.from_numpy(test_df.values)
     # merge the datasets
     dataset = torch.cat((train_data, test_data), 0)
-    
     adultDataset = AdultDataset(dataset)
-    dataLoader = DataLoader(dataset=adultDataset, batch_size=128, shuffle=true)
+    dataLoader = DataLoader(dataset=adultDataset,
+                            batch_size=data_batch, shuffle=true)
     return dataLoader
 }
