@@ -1,7 +1,7 @@
 import torch
 import torch.nn as nn
 import torch.nn.functional as F
-from torch.utils.data.dataset import Dataset, DataLoader
+from torch.utils.data import Dataset, DataLoader
 
 import pandas as pd
 import numpy as np
@@ -51,7 +51,7 @@ def mapping(tuple):
     return tuple
 
 
-def load_data(data_batch=128){
+def load_data(data_batch=128):
     # load data from dataset
     # Using 11variables, the casual model is shown in the paper
     # The atribute are:
@@ -111,6 +111,6 @@ def load_data(data_batch=128){
     dataset = torch.cat((train_data, test_data), 0)
     adultDataset = AdultDataset(dataset)
     dataLoader = DataLoader(dataset=adultDataset,
-                            batch_size=data_batch, shuffle=true)
+                            batch_size=data_batch, shuffle=True)
     return dataLoader
-}
+

@@ -131,11 +131,14 @@ class CFGAN(nn.Module):
                 self.edu_level, self.occupation, self.hours_per_week, self.workclass, self.relationship], 1
         ))
 
-        return self.age, self.workclass, self.edu_level, self.marital_status,
+        return torch.cat([self.age, self.workclass, self.edu_level, self.marital_status,
         self.occupation, self.relationship, self.race, self.sex,
-        self.hours_per_week, self.native_country, self.income
+        self.hours_per_week, self.native_country, self.income], 1)
 
 
-# cf = CFGAN(f=nn.Sigmoid())
-# cf(torch.randn(6, 11), intervention=0)
-# print(cf)
+# cf = CFGAN(f=torch.sigmoid)
+# p = cf(torch.randn(6, 11))
+# discriminator_1 = Discriminator(
+#         torch.tanh, 11, 64, 1)
+# d = discriminator_1(p)
+# print(d)
