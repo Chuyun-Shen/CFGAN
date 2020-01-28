@@ -13,13 +13,13 @@ from CFGAN import CFGAN, Discriminator
 def train():
     # Model parameters
     num_epochs = 1000
-    g_steps = 1000
-    g2_steps = 500
+    g_steps = 64
+    g2_steps = 64
     batch = 128
     LR = 0.001
     print_interval = 100
     # action function
-    discriminator_activation_function = torch.sigmoid
+    discriminator_activation_function = nn.LeakyReLU(0.2)
     generator_activation_function = torch.tanh
 
     # net init
@@ -38,8 +38,9 @@ def train():
     print("load data")
     dataloader = load_data(batch)
     print("data loading has finished")
-    # GAN1
+
     for epoch in range(num_epochs):
+        # GAN1
         # 1. Train D on real+fake
         # D.zero_grad()
         data = copy.copy(dataloader)
@@ -90,7 +91,7 @@ def train():
             noise_o1 = []
             noise_o2 = []
             noise_o3 = []
-
+            ge0, ge1, ge2, ge3 = None, None, None, None
             for index, single_data in enumerate(fake_data):
                 if(single_data[7] < 0.5 and single_data[9] < 0.5):
                     noise_o0.append(noise_z[index].view(1, -1))
