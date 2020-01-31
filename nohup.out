@@ -1,0 +1,245 @@
+[W 22:58:34.706 NotebookApp] WARNING: The notebook server is listening on all IP addresses and not using encryption. This is not recommended.
+[I 22:58:34.729 NotebookApp] JupyterLab extension loaded from /home/cyshen/anaconda3/lib/python3.7/site-packages/jupyterlab
+[I 22:58:34.729 NotebookApp] JupyterLab application directory is /home/cyshen/anaconda3/share/jupyter/lab
+[I 22:58:34.730 NotebookApp] Serving notebooks from local directory: /home/cyshen/cyshen_fairness_pytorch_for_CFGAN
+[I 22:58:34.730 NotebookApp] The Jupyter Notebook is running at:
+[I 22:58:34.730 NotebookApp] http://mailecnu-SYS-4029GP-TRT:8895/
+[I 22:58:34.730 NotebookApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[I 22:59:05.724 NotebookApp] 302 GET / (172.20.146.169) 0.99ms
+[I 22:59:05.791 NotebookApp] 302 GET /tree? (172.20.146.169) 1.28ms
+[W 22:59:11.206 NotebookApp] 401 POST /login?next=%2Ftree%3F (172.20.146.169) 3.76ms referer=http://172.23.132.104:8895/login?next=%2Ftree%3F
+[I 22:59:15.405 NotebookApp] 302 POST /login?next=%2Ftree%3F (172.20.146.169) 1.86ms
+[W 22:59:28.017 NotebookApp] Notebook CFGAN.ipynb is not trusted
+[I 22:59:28.347 NotebookApp] Kernel started: b74d2b27-f56a-4108-9081-612406261ee7
+[I 23:01:28.558 NotebookApp] Saving file at /CFGAN.ipynb
+[W 23:01:28.558 NotebookApp] Notebook CFGAN.ipynb is not trusted
+[I 23:03:28.974 NotebookApp] Saving file at /CFGAN.ipynb
+[W 23:03:28.975 NotebookApp] Notebook CFGAN.ipynb is not trusted
+[I 23:05:30.432 NotebookApp] Saving file at /CFGAN.ipynb
+[W 23:05:30.432 NotebookApp] Notebook CFGAN.ipynb is not trusted
+[I 23:07:28.569 NotebookApp] Saving file at /CFGAN.ipynb
+[W 23:07:28.569 NotebookApp] Notebook CFGAN.ipynb is not trusted
+[I 23:08:35.692 NotebookApp] Starting buffering for b74d2b27-f56a-4108-9081-612406261ee7:32b6132a635849598a4380321276a0a6
+[I 23:08:36.006 NotebookApp] Kernel restarted: b74d2b27-f56a-4108-9081-612406261ee7
+[I 23:08:36.498 NotebookApp] Restoring connection for b74d2b27-f56a-4108-9081-612406261ee7:32b6132a635849598a4380321276a0a6
+[I 23:08:36.498 NotebookApp] Replaying 6 buffered messages
+[I 23:09:28.508 NotebookApp] Saving file at /CFGAN.ipynb
+[I 23:11:28.533 NotebookApp] Saving file at /CFGAN.ipynb
+[I 23:13:28.597 NotebookApp] Saving file at /CFGAN.ipynb
+[I 23:15:28.526 NotebookApp] Saving file at /CFGAN.ipynb
+[I 23:17:28.554 NotebookApp] Saving file at /CFGAN.ipynb
+[I 23:19:28.582 NotebookApp] Saving file at /CFGAN.ipynb
+[I 23:21:52.160 NotebookApp] Kernel interrupted: b74d2b27-f56a-4108-9081-612406261ee7
+[I 23:22:07.135 NotebookApp] Saving file at /CFGAN.ipynb
+[I 23:23:25.808 NotebookApp] Kernel interrupted: b74d2b27-f56a-4108-9081-612406261ee7
+[I 23:23:28.463 NotebookApp] Saving file at /CFGAN.ipynb
+[I 23:25:28.551 NotebookApp] Saving file at /CFGAN.ipynb
+[I 23:25:35.323 NotebookApp] Kernel interrupted: b74d2b27-f56a-4108-9081-612406261ee7
+[I 23:27:28.596 NotebookApp] Saving file at /CFGAN.ipynb
+[I 23:42:00.153 NotebookApp] Starting buffering for b74d2b27-f56a-4108-9081-612406261ee7:32b6132a635849598a4380321276a0a6
+[I 23:42:00.642 NotebookApp] Kernel restarted: b74d2b27-f56a-4108-9081-612406261ee7
+[I 23:42:01.151 NotebookApp] Restoring connection for b74d2b27-f56a-4108-9081-612406261ee7:32b6132a635849598a4380321276a0a6
+[I 23:42:01.151 NotebookApp] Replaying 6 buffered messages
+[I 23:42:14.825 NotebookApp] Starting buffering for b74d2b27-f56a-4108-9081-612406261ee7:32b6132a635849598a4380321276a0a6
+[I 23:42:15.034 NotebookApp] Kernel shutdown: b74d2b27-f56a-4108-9081-612406261ee7
+[W 21:31:18.995 NotebookApp] WARNING: The notebook server is listening on all IP addresses and not using encryption. This is not recommended.
+[I 21:31:18.996 NotebookApp] The port 8895 is already in use, trying another port.
+[I 21:31:19.019 NotebookApp] JupyterLab extension loaded from /home/cyshen/anaconda3/lib/python3.7/site-packages/jupyterlab
+[I 21:31:19.019 NotebookApp] JupyterLab application directory is /home/cyshen/anaconda3/share/jupyter/lab
+[I 21:31:19.020 NotebookApp] Serving notebooks from local directory: /home/cyshen/cyshen_fairness_pytorch_for_CFGAN
+[I 21:31:19.020 NotebookApp] The Jupyter Notebook is running at:
+[I 21:31:19.020 NotebookApp] http://mailecnu-SYS-4029GP-TRT:8896/
+[I 21:31:19.020 NotebookApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[I 21:31:37.511 NotebookApp] 302 GET / (172.20.145.246) 0.97ms
+[I 21:31:59.513 NotebookApp] Kernel started: 1c423267-c7d5-4c97-a710-316eb6e72cd9
+[I 21:33:59.693 NotebookApp] Saving file at /CFGAN.ipynb
+[I 21:35:59.684 NotebookApp] Saving file at /CFGAN.ipynb
+[I 21:37:59.710 NotebookApp] Saving file at /CFGAN.ipynb
+[I 21:39:59.692 NotebookApp] Saving file at /CFGAN.ipynb
+[I 21:41:59.689 NotebookApp] Saving file at /CFGAN.ipynb
+[I 21:43:59.690 NotebookApp] Saving file at /CFGAN.ipynb
+[I 21:47:59.710 NotebookApp] Saving file at /CFGAN.ipynb
+[I 21:49:59.702 NotebookApp] Saving file at /CFGAN.ipynb
+[I 21:51:59.788 NotebookApp] Saving file at /CFGAN.ipynb
+[I 21:53:59.724 NotebookApp] Saving file at /CFGAN.ipynb
+[I 21:55:59.728 NotebookApp] Saving file at /CFGAN.ipynb
+[I 21:57:59.746 NotebookApp] Saving file at /CFGAN.ipynb
+[I 21:59:59.717 NotebookApp] Saving file at /CFGAN.ipynb
+[I 22:01:59.709 NotebookApp] Saving file at /CFGAN.ipynb
+[I 22:03:59.711 NotebookApp] Saving file at /CFGAN.ipynb
+[I 22:05:59.720 NotebookApp] Saving file at /CFGAN.ipynb
+[I 22:07:59.714 NotebookApp] Saving file at /CFGAN.ipynb
+[I 22:10:00.687 NotebookApp] Saving file at /CFGAN.ipynb
+[I 22:11:59.704 NotebookApp] Saving file at /CFGAN.ipynb
+[I 22:15:59.704 NotebookApp] Saving file at /CFGAN.ipynb
+[I 22:21:59.686 NotebookApp] Saving file at /CFGAN.ipynb
+[I 22:24:00.655 NotebookApp] Saving file at /CFGAN.ipynb
+[I 22:26:00.661 NotebookApp] Saving file at /CFGAN.ipynb
+[I 22:29:59.676 NotebookApp] Saving file at /CFGAN.ipynb
+[I 22:31:59.716 NotebookApp] Saving file at /CFGAN.ipynb
+[I 22:45:59.745 NotebookApp] Saving file at /CFGAN.ipynb
+[I 22:47:59.685 NotebookApp] Saving file at /CFGAN.ipynb
+[I 22:49:59.666 NotebookApp] Saving file at /CFGAN.ipynb
+[I 22:51:59.670 NotebookApp] Saving file at /CFGAN.ipynb
+[I 22:53:59.672 NotebookApp] Saving file at /CFGAN.ipynb
+[I 22:56:00.590 NotebookApp] Saving file at /CFGAN.ipynb
+[I 22:57:59.672 NotebookApp] Saving file at /CFGAN.ipynb
+[I 22:59:59.670 NotebookApp] Saving file at /CFGAN.ipynb
+[I 23:01:59.669 NotebookApp] Saving file at /CFGAN.ipynb
+[I 23:03:59.667 NotebookApp] Saving file at /CFGAN.ipynb
+[I 23:05:59.675 NotebookApp] Saving file at /CFGAN.ipynb
+[I 23:07:59.680 NotebookApp] Saving file at /CFGAN.ipynb
+[I 23:09:59.668 NotebookApp] Saving file at /CFGAN.ipynb
+[I 23:11:59.667 NotebookApp] Saving file at /CFGAN.ipynb
+[I 23:13:59.666 NotebookApp] Saving file at /CFGAN.ipynb
+[I 23:15:59.667 NotebookApp] Saving file at /CFGAN.ipynb
+[I 23:17:59.668 NotebookApp] Saving file at /CFGAN.ipynb
+[I 23:19:59.669 NotebookApp] Saving file at /CFGAN.ipynb
+[I 23:21:59.666 NotebookApp] Saving file at /CFGAN.ipynb
+[I 23:25:59.678 NotebookApp] Saving file at /CFGAN.ipynb
+[I 23:27:59.767 NotebookApp] Saving file at /CFGAN.ipynb
+[I 23:29:59.666 NotebookApp] Saving file at /CFGAN.ipynb
+[I 23:31:59.667 NotebookApp] Saving file at /CFGAN.ipynb
+[I 23:33:59.695 NotebookApp] Saving file at /CFGAN.ipynb
+[I 23:35:59.665 NotebookApp] Saving file at /CFGAN.ipynb
+[I 23:37:59.681 NotebookApp] Saving file at /CFGAN.ipynb
+[I 23:39:59.669 NotebookApp] Saving file at /CFGAN.ipynb
+[I 23:42:00.667 NotebookApp] Saving file at /CFGAN.ipynb
+[I 23:43:59.670 NotebookApp] Saving file at /CFGAN.ipynb
+[I 23:46:00.661 NotebookApp] Saving file at /CFGAN.ipynb
+[I 23:47:59.703 NotebookApp] Saving file at /CFGAN.ipynb
+[I 23:49:59.669 NotebookApp] Saving file at /CFGAN.ipynb
+[I 23:50:26.662 NotebookApp] Saving file at /CFGAN.ipynb
+[I 23:51:59.668 NotebookApp] Saving file at /CFGAN.ipynb
+[I 23:53:59.672 NotebookApp] Saving file at /CFGAN.ipynb
+[I 23:55:59.686 NotebookApp] Saving file at /CFGAN.ipynb
+[I 23:57:59.685 NotebookApp] Saving file at /CFGAN.ipynb
+[I 23:59:59.676 NotebookApp] Saving file at /CFGAN.ipynb
+[I 00:01:59.672 NotebookApp] Saving file at /CFGAN.ipynb
+[I 00:17:59.784 NotebookApp] Saving file at /CFGAN.ipynb
+[I 00:38:08.269 NotebookApp] Starting buffering for 1c423267-c7d5-4c97-a710-316eb6e72cd9:09d3f7c9857b4059a384f982f68d8e04
+[I 09:47:34.995 NotebookApp] Restoring connection for 1c423267-c7d5-4c97-a710-316eb6e72cd9:09d3f7c9857b4059a384f982f68d8e04
+[I 09:47:56.987 NotebookApp] Saving file at /CFGAN.ipynb
+[I 09:49:56.831 NotebookApp] Saving file at /CFGAN.ipynb
+[I 09:51:56.823 NotebookApp] Saving file at /CFGAN.ipynb
+[I 09:53:56.826 NotebookApp] Saving file at /CFGAN.ipynb
+[I 11:26:32.024 NotebookApp] Starting buffering for 1c423267-c7d5-4c97-a710-316eb6e72cd9:09d3f7c9857b4059a384f982f68d8e04
+[W 16:18:45.715 NotebookApp] 403 POST /api/sessions (172.20.147.208): '_xsrf' argument missing from POST
+[W 16:18:45.716 NotebookApp] '_xsrf' argument missing from POST
+[W 16:18:45.716 NotebookApp] 403 POST /api/sessions (172.20.147.208) 1.90ms referer=http://172.23.132.104:8895/notebooks/CFGAN.ipynb
+[I 09:56:36.626 NotebookApp] Starting buffering for 1c423267-c7d5-4c97-a710-316eb6e72cd9:f8aced8d654d4521974d76784dedcb63
+[I 09:56:37.042 NotebookApp] Kernel restarted: 1c423267-c7d5-4c97-a710-316eb6e72cd9
+[I 09:56:37.669 NotebookApp] Restoring connection for 1c423267-c7d5-4c97-a710-316eb6e72cd9:f8aced8d654d4521974d76784dedcb63
+[I 09:56:37.669 NotebookApp] Replaying 5 buffered messages
+[I 09:58:23.820 NotebookApp] Saving file at /CFGAN.ipynb
+[I 10:00:23.947 NotebookApp] Saving file at /CFGAN.ipynb
+[I 10:02:24.696 NotebookApp] Saving file at /CFGAN.ipynb
+[I 10:04:23.807 NotebookApp] Saving file at /CFGAN.ipynb
+[I 10:06:24.695 NotebookApp] Saving file at /CFGAN.ipynb
+[I 10:19:04.244 NotebookApp] Kernel interrupted: 1c423267-c7d5-4c97-a710-316eb6e72cd9
+[I 10:20:23.996 NotebookApp] Saving file at /CFGAN.ipynb
+[I 10:22:23.862 NotebookApp] Saving file at /CFGAN.ipynb
+[I 10:24:24.680 NotebookApp] Saving file at /CFGAN.ipynb
+[I 10:33:40.362 NotebookApp] Kernel interrupted: 1c423267-c7d5-4c97-a710-316eb6e72cd9
+[I 10:34:23.815 NotebookApp] Saving file at /CFGAN.ipynb
+[I 10:36:24.679 NotebookApp] Saving file at /CFGAN.ipynb
+[I 10:38:24.684 NotebookApp] Saving file at /CFGAN.ipynb
+[I 10:40:23.869 NotebookApp] Saving file at /CFGAN.ipynb
+[I 10:42:24.686 NotebookApp] Saving file at /CFGAN.ipynb
+[I 10:44:24.678 NotebookApp] Saving file at /CFGAN.ipynb
+[I 10:46:23.802 NotebookApp] Saving file at /CFGAN.ipynb
+[I 10:48:23.818 NotebookApp] Saving file at /CFGAN.ipynb
+[I 10:54:23.826 NotebookApp] Saving file at /CFGAN.ipynb
+[I 10:56:24.697 NotebookApp] Saving file at /CFGAN.ipynb
+[I 10:58:24.705 NotebookApp] Saving file at /CFGAN.ipynb
+[I 11:00:24.692 NotebookApp] Saving file at /CFGAN.ipynb
+[I 11:02:23.820 NotebookApp] Saving file at /CFGAN.ipynb
+[I 11:04:23.944 NotebookApp] Saving file at /CFGAN.ipynb
+[I 11:06:23.844 NotebookApp] Saving file at /CFGAN.ipynb
+[I 11:08:23.845 NotebookApp] Saving file at /CFGAN.ipynb
+[I 11:10:23.915 NotebookApp] Saving file at /CFGAN.ipynb
+[I 11:12:23.843 NotebookApp] Saving file at /CFGAN.ipynb
+[I 11:14:23.835 NotebookApp] Saving file at /CFGAN.ipynb
+[I 11:16:23.838 NotebookApp] Saving file at /CFGAN.ipynb
+[I 11:18:23.842 NotebookApp] Saving file at /CFGAN.ipynb
+[I 11:22:23.856 NotebookApp] Saving file at /CFGAN.ipynb
+[I 11:24:23.874 NotebookApp] Saving file at /CFGAN.ipynb
+[I 11:28:23.848 NotebookApp] Saving file at /CFGAN.ipynb
+[I 11:30:23.916 NotebookApp] Saving file at /CFGAN.ipynb
+[I 11:32:23.925 NotebookApp] Saving file at /CFGAN.ipynb
+[I 11:34:23.836 NotebookApp] Saving file at /CFGAN.ipynb
+[I 11:36:23.849 NotebookApp] Saving file at /CFGAN.ipynb
+[I 11:38:23.847 NotebookApp] Saving file at /CFGAN.ipynb
+[I 11:40:23.909 NotebookApp] Saving file at /CFGAN.ipynb
+[I 11:42:23.840 NotebookApp] Saving file at /CFGAN.ipynb
+[I 11:44:24.722 NotebookApp] Saving file at /CFGAN.ipynb
+[I 11:46:24.732 NotebookApp] Saving file at /CFGAN.ipynb
+[I 11:52:23.933 NotebookApp] Saving file at /CFGAN.ipynb
+[I 11:54:23.857 NotebookApp] Saving file at /CFGAN.ipynb
+[I 11:56:23.861 NotebookApp] Saving file at /CFGAN.ipynb
+[I 11:58:23.849 NotebookApp] Saving file at /CFGAN.ipynb
+[I 12:00:23.921 NotebookApp] Saving file at /CFGAN.ipynb
+[I 12:26:23.966 NotebookApp] Saving file at /CFGAN.ipynb
+[I 12:30:24.017 NotebookApp] Saving file at /CFGAN.ipynb
+[I 12:32:23.878 NotebookApp] Saving file at /CFGAN.ipynb
+[I 13:20:24.012 NotebookApp] Saving file at /CFGAN.ipynb
+[I 13:22:23.869 NotebookApp] Saving file at /CFGAN.ipynb
+[I 13:24:23.863 NotebookApp] Saving file at /CFGAN.ipynb
+[I 13:26:23.907 NotebookApp] Saving file at /CFGAN.ipynb
+[I 13:28:23.902 NotebookApp] Saving file at /CFGAN.ipynb
+[I 13:30:23.917 NotebookApp] Saving file at /CFGAN.ipynb
+[I 13:32:23.922 NotebookApp] Saving file at /CFGAN.ipynb
+[I 13:34:23.930 NotebookApp] Saving file at /CFGAN.ipynb
+[I 13:36:23.949 NotebookApp] Saving file at /CFGAN.ipynb
+[I 13:38:23.874 NotebookApp] Saving file at /CFGAN.ipynb
+[I 13:40:23.998 NotebookApp] Saving file at /CFGAN.ipynb
+[I 13:42:23.955 NotebookApp] Saving file at /CFGAN.ipynb
+[I 13:44:01.856 NotebookApp] Starting buffering for 1c423267-c7d5-4c97-a710-316eb6e72cd9:f8aced8d654d4521974d76784dedcb63
+[I 15:22:31.877 NotebookApp] Saving file at /CFGAN.ipynb
+[I 15:22:45.223 NotebookApp] Restoring connection for 1c423267-c7d5-4c97-a710-316eb6e72cd9:f8aced8d654d4521974d76784dedcb63
+[I 15:24:23.569 NotebookApp] Saving file at /CFGAN.ipynb
+[I 18:08:31.033 NotebookApp] Starting buffering for 1c423267-c7d5-4c97-a710-316eb6e72cd9:f8aced8d654d4521974d76784dedcb63
+[I 16:23:25.507 NotebookApp] Saving file at /CFGAN.ipynb
+[I 16:25:25.480 NotebookApp] Saving file at /CFGAN.ipynb
+[I 16:27:25.484 NotebookApp] Saving file at /CFGAN.ipynb
+[I 16:55:25.591 NotebookApp] Saving file at /CFGAN.ipynb
+[I 17:01:25.617 NotebookApp] Saving file at /CFGAN.ipynb
+[I 17:03:25.537 NotebookApp] Saving file at /CFGAN.ipynb
+[I 17:05:25.521 NotebookApp] Saving file at /CFGAN.ipynb
+[I 17:07:25.503 NotebookApp] Saving file at /CFGAN.ipynb
+[I 17:09:25.502 NotebookApp] Saving file at /CFGAN.ipynb
+[I 17:11:25.519 NotebookApp] Saving file at /CFGAN.ipynb
+[I 17:13:25.520 NotebookApp] Saving file at /CFGAN.ipynb
+[I 17:15:25.512 NotebookApp] Saving file at /CFGAN.ipynb
+[I 17:17:25.507 NotebookApp] Saving file at /CFGAN.ipynb
+[I 17:19:25.532 NotebookApp] Saving file at /CFGAN.ipynb
+[I 17:21:25.524 NotebookApp] Saving file at /CFGAN.ipynb
+[I 17:23:25.507 NotebookApp] Saving file at /CFGAN.ipynb
+[I 17:25:25.538 NotebookApp] Saving file at /CFGAN.ipynb
+[I 17:27:25.514 NotebookApp] Saving file at /CFGAN.ipynb
+[I 17:29:25.537 NotebookApp] Saving file at /CFGAN.ipynb
+[I 17:31:25.531 NotebookApp] Saving file at /CFGAN.ipynb
+[I 17:33:25.522 NotebookApp] Saving file at /CFGAN.ipynb
+[I 17:35:25.545 NotebookApp] Saving file at /CFGAN.ipynb
+[I 17:37:25.558 NotebookApp] Saving file at /CFGAN.ipynb
+[I 17:39:25.535 NotebookApp] Saving file at /CFGAN.ipynb
+[I 17:41:25.528 NotebookApp] Saving file at /CFGAN.ipynb
+[I 17:43:25.524 NotebookApp] Saving file at /CFGAN.ipynb
+[I 17:47:25.535 NotebookApp] Saving file at /CFGAN.ipynb
+[I 17:51:25.543 NotebookApp] Saving file at /CFGAN.ipynb
+[I 18:15:25.532 NotebookApp] Saving file at /CFGAN.ipynb
+[I 18:17:25.514 NotebookApp] Saving file at /CFGAN.ipynb
+[I 18:19:25.525 NotebookApp] Saving file at /CFGAN.ipynb
+[I 18:21:25.525 NotebookApp] Saving file at /CFGAN.ipynb
+[I 18:23:25.524 NotebookApp] Saving file at /CFGAN.ipynb
+[I 18:25:25.524 NotebookApp] Saving file at /CFGAN.ipynb
+[I 18:27:25.526 NotebookApp] Saving file at /CFGAN.ipynb
+[I 18:29:25.527 NotebookApp] Saving file at /CFGAN.ipynb
+[I 18:31:25.526 NotebookApp] Saving file at /CFGAN.ipynb
+[I 18:47:05.514 NotebookApp] Starting buffering for 1c423267-c7d5-4c97-a710-316eb6e72cd9:abb84127fc284885a62cf716dbfa80ee
+[I 21:10:44.818 NotebookApp] Restoring connection for 1c423267-c7d5-4c97-a710-316eb6e72cd9:abb84127fc284885a62cf716dbfa80ee
+[I 21:11:25.967 NotebookApp] Saving file at /CFGAN.ipynb
+[I 21:13:25.907 NotebookApp] Saving file at /CFGAN.ipynb
+[I 21:15:25.875 NotebookApp] Saving file at /CFGAN.ipynb
+[I 21:17:25.860 NotebookApp] Saving file at /CFGAN.ipynb
+[I 22:20:05.585 NotebookApp] Starting buffering for 1c423267-c7d5-4c97-a710-316eb6e72cd9:abb84127fc284885a62cf716dbfa80ee

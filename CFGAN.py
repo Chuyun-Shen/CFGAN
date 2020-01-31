@@ -3,6 +3,7 @@ import torch
 import torch.nn as nn
 import torch.optim as optim
 
+
 # Attribute:
 # "age", "workclass", "edu_level","marital_status",
 # "occupation", "relationship","race", "sex",
@@ -10,83 +11,82 @@ import torch.optim as optim
 
 
 # a basic Generator
-
-
 class Generator(nn.Module):
-    def __init__(self, f, input_size, hidden_size, output_size):
+    def __init__(self, input_size, hidden_size=8):
         super(Generator, self).__init__()
-        self.map1 = nn.Linear(input_size, hidden_size)
-        self.map2 = nn.Linear(hidden_size, hidden_size*2)
-        self.map3 = nn.Linear(hidden_size*2, output_size)
-        # f is action function
-        self.f = f
 
-    def forward(self, x):
-        x = self.map1(x)
-        x = self.f(x)
-        x = self.map2(x)
-        x = self.f(x)
-        x = self.map3(x)
-        return torch.sigmoid(x)
+        def block(in_feat, out_feat, normalize=True):
+            layers = [nn.Linear(in_feat, out_feat)]
+            if normalize:
+                layers.append(nn.BatchNorm1d(out_feat, 0.8))
+            layers.append(nn.LeakyReLU(0.2, inplace=True))
+            return layers
+        self.model = nn.Sequential(
+            *block(input_size, hidden_size, normalize=False),
+            *block(hidden_size, hidden_size),
+            *block(hidden_size, hidden_size),
+            *block(hidden_size, hidden_size),
+            *block(hidden_size, hidden_size),
+            nn.Linear(hidden_size, 1),
+            nn.Tanh()
+        )
+
+    def forward(self, z):
+        x = self.model(z)
+        return x
+
 
 # a basic Discriminator
-
-
 class Discriminator(nn.Module):
-    def __init__(self, f, input_size, hidden_size, output_size):
+    def __init__(self, input_size, hidden_size=16, output_size=1):
         super(Discriminator, self).__init__()
-        self.map1 = nn.Linear(input_size, hidden_size)
-        self.map2 = nn.Linear(hidden_size, hidden_size)
-        self.map3 = nn.Linear(hidden_size, output_size)
-        # f is action function
-        self.f = f
+        self.model = nn.Sequential(
+            nn.Linear(input_size, hidden_size),
+            nn.LeakyReLU(0.2, inplace=True),
+            nn.Linear(input_size, hidden_size),
+            nn.LeakyReLU(0.2, inplace=True),
+            nn.Linear(input_size, hidden_size),
+            nn.LeakyReLU(0.2, inplace=True),
+            nn.Linear(input_size, hidden_size),
+            nn.LeakyReLU(0.2, inplace=True),
+            nn.Linear(input_size, hidden_size),
+            nn.LeakyReLU(0.2, inplace=True),
+            nn.Linear(input_size, output_size)
+        )
 
     def forward(self, x):
-        x = self.f(self.map1(x))
-        x = self.f(self.map2(x))
-        return self.f(self.map3(x))
-
+        x = self.model(x)
+        return x
 
 class CFGAN(nn.Module):
-    def __init__(self, f):
+    def __init__(self):
         super(CFGAN, self).__init__()
 
-        self.age_net = Generator(
-            f, 1, 4, 1)
-        self.workclass_net = Generator(
-            f, 5, 16, 1)
-        self.edu_level_net = Generator(
-            f, 6, 16, 1)
-        self.marital_status_net = Generator(
-            f, 5, 16, 1)
-        self.occupation_net = Generator(
-            f, 6, 16, 1)
-        self.relationship_net = Generator(
-            f, 6, 16, 1)
-        self.race_net = Generator(
-            f, 1, 4, 1)
-        self.sex_net = Generator(
-            f, 1, 4, 1)
-        self.hours_per_week_net = Generator(
-            f, 7, 32, 1)
-        self.native_country_net = Generator(
-            f, 1, 4, 1)
-        self.income_net = Generator(
-            f, 11, 32, 1)
+        self.age_net = Generator(8)
+        self.workclass_net = Generator(12)
+        self.edu_level_net = Generator(13)
+        self.marital_status_net = Generator(12)
+        self.occupation_net = Generator(13)
+        self.relationship_net = Generator(13)
+        self.race_net = Generator(8)
+        self.sex_net = Generator(8)
+        self.hours_per_week_net = Generator(14)
+        self.native_country_net = Generator(8)
+        self.income_net = Generator(18)
 
     def forward(self, input, intervention=-1):
         name = ["race", "age", "sex", "native_country", "marital_status",
                 "edu_level", "occupation", "hours_per_week", "workclass", "relationship", "income"]
-        Z = dict(zip(name, input.transpose(0, 1).view(len(name), -1, 1)))
+        Z = dict(zip(name, input.transpose(0, 1)))
 
         # hight = 0 in the graph
         # sex should considered about intervention
         if(intervention == -1):
             self.sex = self.race_net(Z["sex"])
         elif(intervention == 0):
-            self.sex = torch.zeros(Z["sex"].size())
+            self.sex = torch.zeros(Z["sex"].size()[0])
         else:
-            self.sex = torch.ones(Z["sex"].size())
+            self.sex = torch.ones(Z["sex"].size()[0])
         self.age = self.age_net(Z["age"])
         self.race = self.sex_net(Z["race"])
         self.native_country = self.native_country_net(Z["native_country"])
@@ -132,13 +132,8 @@ class CFGAN(nn.Module):
         ))
 
         return torch.cat([self.age, self.workclass, self.edu_level, self.marital_status,
-        self.occupation, self.relationship, self.race, self.sex,
-        self.hours_per_week, self.native_country, self.income], 1)
+                          self.occupation, self.relationship, self.race, self.sex,
+                          self.hours_per_week, self.native_country, self.income], 1)
 
 
-# cf = CFGAN(f=torch.sigmoid)
-# p = cf(torch.randn(6, 11))
-# discriminator_1 = Discriminator(
-#         torch.tanh, 11, 64, 1)
-# d = discriminator_1(p)
-# print(d)
+
