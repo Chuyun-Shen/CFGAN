@@ -43,15 +43,15 @@ class Discriminator(nn.Module):
         self.model = nn.Sequential(
             nn.Linear(input_size, hidden_size),
             nn.LeakyReLU(0.2, inplace=True),
-            nn.Linear(input_size, hidden_size),
+            nn.Linear(hidden_size, hidden_size),
             nn.LeakyReLU(0.2, inplace=True),
-            nn.Linear(input_size, hidden_size),
+            nn.Linear(hidden_size, hidden_size),
             nn.LeakyReLU(0.2, inplace=True),
-            nn.Linear(input_size, hidden_size),
+            nn.Linear(hidden_size, hidden_size),
             nn.LeakyReLU(0.2, inplace=True),
-            nn.Linear(input_size, hidden_size),
+            nn.Linear(hidden_size, hidden_size),
             nn.LeakyReLU(0.2, inplace=True),
-            nn.Linear(input_size, output_size)
+            nn.Linear(hidden_size, output_size)
         )
 
     def forward(self, x):
