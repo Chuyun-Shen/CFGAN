@@ -13,7 +13,7 @@ from CFGAN import CFGAN, Discriminator
 def compute_gradient_penalty(D, real_samples, fake_samples):
     """Calculates the gradient penalty loss for WGAN GP"""
     # Random weight term for interpolation between real and fake samples
-    alpha = torch.rand(real_samples.size(0), 1, 1, 1)))
+    alpha = torch.rand(real_samples.size(0), 1, 1, 1)
     # Get random interpolation between real and fake samples
     interpolates=(alpha * real_samples + ((1 - alpha)
                   * fake_samples)).requires_grad_(True)
@@ -49,7 +49,7 @@ def train():
 
     # net init
     discriminator_1=Discriminator(11)
-    generator=CFGAN()
+    generator=CFGAN(8)
 
     # Binary cross entropy: https://pytorch.org/docs/stable/nn.html?highlight=bceloss#torch.nn.BCELoss
     criterion=nn.BCELoss()
@@ -73,12 +73,12 @@ def train():
 
             # 1A: Train D1 on real
             discriminator_1_optim.zero_grad()
-            Z = torch.randn(d_real_data.size()[0], 11, 8)
             d_real_data=real_data
+            Z = torch.randn(d_real_data.size()[0], 11, 8)
             d_real_decision=discriminator_1(d_real_data.float())
 
             # 1B: Train D1 on fake data
-            d_fake_data=generator()
+            d_fake_data=generator(Z)
             # print(d_fake_data.size())
             d_fake_decision=discriminator_1(d_fake_data)
 
@@ -91,7 +91,7 @@ def train():
 
             d_loss.backward()
             d_l=d_loss.tolist()
-            
+
             generator_optim.zero_grad()
 
             if i % n_critic == 0:
