@@ -59,20 +59,20 @@ class Discriminator(nn.Module):
         return x
 
 class CFGAN(nn.Module):
-    def __init__(self):
+    def __init__(self, z_size):
         super(CFGAN, self).__init__()
-
-        self.age_net = Generator(8)
-        self.workclass_net = Generator(12)
-        self.edu_level_net = Generator(13)
-        self.marital_status_net = Generator(12)
-        self.occupation_net = Generator(13)
-        self.relationship_net = Generator(13)
-        self.race_net = Generator(8)
-        self.sex_net = Generator(8)
-        self.hours_per_week_net = Generator(14)
-        self.native_country_net = Generator(8)
-        self.income_net = Generator(18)
+        
+        self.age_net = Generator(z_size)
+        self.workclass_net = Generator(z_size+4)
+        self.edu_level_net = Generator(z_size+5)
+        self.marital_status_net = Generator(z_size+4)
+        self.occupation_net = Generator(z_size+5)
+        self.relationship_net = Generator(z_size+5)
+        self.race_net = Generator(z_size)
+        self.sex_net = Generator(z_size)
+        self.hours_per_week_net = Generator(z_size+6)
+        self.native_country_net = Generator(z_size)
+        self.income_net = Generator(z_size+10)
 
     def forward(self, input, intervention=-1):
         name = ["race", "age", "sex", "native_country", "marital_status",
